@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .pdf {
+            position: relative;
+            z-index: 1;
+        }
+        .modal {
+            background: orange;
+            display: inline-block;
+            position: fixed;
+            width: 300px;
+            left: calc(50% - 150px);
+            top: 100px;
+            padding: 20px;
+            z-index: 10;
+        }
+    </style>
+    <div class="pdf">
+        <embed width="100%" height="500px" src="test.pdf" type="application/pdf" />
+    </div>
+    <div class="modal">
+        <button>Try to push me</button>
+    </div>
+</body>
+</html>
